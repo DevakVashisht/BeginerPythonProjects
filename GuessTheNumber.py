@@ -1,5 +1,6 @@
 import random
 
+ChooseNumber = int(input("Choose a number: "))
 def fun_guess(x):
     game_continue = True
     Guess = random.randint(1, x)
@@ -14,4 +15,4 @@ def fun_guess(x):
             print("You won!")
             game_continue = False
             break
-fun_guess(10)
+fun_guess(ChooseNumber)
